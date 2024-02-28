@@ -83,14 +83,17 @@ import re
 
 # ----------------------------- Match and Search ----------------------------- #
 # TODO..
-user_name = '!ivan21'
+
+user_name = '@@ivan21'
 # variant 1
 # re.match(r'\w{8,}', user_name, re.IGNORECASE)
 # variant 2
-regex = re.compile(r'\w{3,}')
+regex = re.compile(r'(\w{3,})')
 m = regex.match(user_name, re.IGNORECASE)
 if m:
-    print('valid')
+    print(m.group(0))
+    print(m.group(1))
+
 
 
 
