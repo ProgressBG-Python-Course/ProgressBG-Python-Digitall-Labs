@@ -1,0 +1,77 @@
+# ------------------------------------ URL ----------------------------------- #
+IP Address => Sofia, bl.234
+Port       =>  ap.1
+
+
+HTTP: HyperText Transfer Protocol
+URL:
+    https://www.example.com:443/index.html?id=123
+    http://www.example.com:80/index.html
+    https://www.example.com
+
+    https://www.google.com/search?q=http+request&sca_esv=850edfa7a76475f6&sxsrf=ACQVn087EgczHVOY-ykpK7KsxAGqZmABqw%3A1709818186337&source=hp&ei=SsHpZZCIEomD7NYPu521gAM&iflsig=ANes7DEAAAAAZenPWkQP-9IVwzejaieTlixs8S3FEqf4&ved=0ahUKEwiQ1f-MoeKEAxWJAdsEHbtODTAQ4dUDCBU&uact=5&oq=http+request&gs_lp=Egdnd3Mtd2l6IgxodHRwIHJlcXVlc3QyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESI2mAlDaEFi0QXAJeACQAQCYAZcCoAHeFKoBBjAuMTUuMrgBA8gBAPgBAZgCGqAC2heoAgrCAgcQIxjqAhgnwgIKECMYgAQYigUYJ8ICBBAjGCfCAgsQLhjHARjRAxiABMICDhAuGIAEGMcBGNEDGNQCwgIIEC4YgAQY1ALCAgUQLhiABMICCxAuGIAEGMcBGNEDmAMgkgcGOS4xNC4zoAedaA&sclient=gws-wiz
+
+    PATH: search
+    QUERY STRING:
+        q=http+request
+        &sca_esv=850edfa7a76475f6
+        &sxsrf=ACQVn087EgczHVOY-ykpK7KsxAGqZmABqw%3A1709818186337
+        &source=hp
+        &ei=SsHpZZCIEomD7NYPu521gAM
+        &iflsig=ANes7DEAAAAAZenPWkQP-9IVwzejaieTlixs8S3FEqf4
+        &ved=0ahUKEwiQ1f-MoeKEAxWJAdsEHbtODTAQ4dUDCBU
+        &uact=5
+        &oq=http+request
+        &gs_lp=Egdnd3Mtd2l6IgxodHRwIHJlcXVlc3QyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESI2mAlDaEFi0QXAJeACQAQCYAZcCoAHeFKoBBjAuMTUuMrgBA8gBAPgBAZgCGqAC2heoAgrCAgcQIxjqAhgnwgIKECMYgAQYigUYJ8ICBBAjGCfCAgsQLhjHARjRAxiABMICDhAuGIAEGMcBGNEDGNQCwgIIEC4YgAQY1ALCAgUQLhiABMICCxAuGIAEGMcBGNEDmAMgkgcGOS4xNC4zoAedaA
+        &sclient=gws-wiz
+
+    https://progressbg.net
+    ftp://www.example.com:80/index.html?id=123
+
+    http://127.0.0.1:8080/index.html
+    http://127.0.0.1:8080/pages/about.html
+    http://127.0.0.1:8080/images/crocus-7079550__340.jpg
+
+
+    https://eshop.com/products/apple
+    PATH:/products/apple
+
+    Routes:
+        /products/apple => /products_2024/prd/apple_123.html
+DNS Server:
+    57.123.20.45 => www.example.com
+    185.45.67.70 => progressbg.net
+
+
+
+# ---------------------- Request Message : Headers demo: --------------------- #
+http://127.0.0.1:8000/
+
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Accept-Encoding: gzip, deflate, br, zstd
+Accept-Language: en-US,en;q=0.9,bg;q=0.8
+Cache-Control: max-age=0
+Connection: keep-alive
+Host: 127.0.0.1:8000
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Site: cross-site
+Sec-Fetch-User: ?1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36
+sec-ch-ua: "Chromium";v="122", "Not(A:Brand";v="24", "Google Chrome";v="122"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Linux"
+
+
+# ---------------------- Responce Message: Headers Demo ---------------------- #
+HTTP/1.1 200 OK
+date: Thu, 07 Mar 2024 14:00:42 GMT
+server: uvicorn
+content-length: 27
+content-type: text/html; charset=utf-8
+
+
+
+# -------------- Server-Side Rendering vs Client-Side Rendering -------------- #
