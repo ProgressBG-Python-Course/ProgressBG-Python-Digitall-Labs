@@ -4,6 +4,7 @@ Maria,28,Plovdiv
 Ivan,34,Sofia
 Maria,28,Plovdiv
 Maria,28,Plovdiv
-Ivan,34,Sofia
-Maria,28,Plovdiv
+'   Ivan   ',34,Sofia
+Maria,28, '   Plovdiv'
+' ', 34,
 Georgi,45,Varna
